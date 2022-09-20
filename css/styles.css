@@ -220,9 +220,9 @@ img {
 /* .menu1 {
   background: var(--background-color2);
 } */
-.menu2 {
+/* .menu2 {
   background: var(--background-color1);
-}
+} */
 .line-nav {
   position: absolute;
   top: 35px;
@@ -243,7 +243,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--background-color2);
+  border-radius: 50px;
+  background-color: var(--background-color4);
 }
 
 /********* header *********/
@@ -256,7 +257,9 @@ img {
   height: 100%;
   position: relative;
 }
-.slider-slide {
+.slider-slide1,
+.slider-slide2,
+.slider-slide3 {
   position: absolute;
   top: 0;
   left: 0;
@@ -267,6 +270,8 @@ img {
   transition: opacity 1s ease-out;
 }
 .home_unete {
+  width: 100%;
+  height: 100vh;
   background-image: url(../assets/inicio/unete1.jpg);
 }
 .home_image1 {
@@ -289,6 +294,16 @@ img {
   height: 100vh;
   background-image: url(../assets/inicio/inicio4.jpg);
 }
+.home_image5 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/inicio/inicio5.jpg);
+}
+.home_image6 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/inicio/inicio6.jpg);
+}
 .active {
   opacity: 1;
   visibility: visible;
@@ -301,7 +316,7 @@ img {
   z-index: 9;
   margin: 0 100px;
   width: 55%;
-  height: 60%;
+  height: 50%;
   border: 100px black;
   display: flex;
   flex-direction: column;
@@ -321,24 +336,52 @@ img {
   font-weight: var(--font-bolder-weight);
   text-align: right;
 }
+.slider-btns {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.slider-btns a {
+  display: block;
+}
 
 /********* Nosotros *********/
 .content-image {
   width: 50%;
+  /* height: 500px; */
   position: relative;
 }
 
 .nosotros_img1 {
-  background-image: url(../assets/inicio/nosotros1.jpeg);
+  background-image: url(../assets/nosotros/nosotros1.jpeg);
 }
 .nosotros_img2 {
-  background-image: url(../assets/inicio/nosotros2.JPG);
+  background-image: url(../assets/nosotros/nosotros2.JPG);
+}
+.nosotros_img3 {
+  background-image: url(../assets/nosotros/nosotros3.jpeg);
+}
+.nosotros_img4 {
+  background-image: url(../assets/nosotros/nosotros4.JPG);
+}
+.nosotros_img5 {
+  background-image: url(../assets/nosotros/nosotros5.jpg);
+}
+.nosotros_img6 {
+  background-image: url(../assets/nosotros/nosotros6.jpg);
 }
 
 .content_nosotros p b {
   color: var(--background-color3);
 }
 .content_nosotros h2 {
+  font-size: var(--h3-font);
   color: var(--text-dark-color);
   font-weight: var(--font-bold-weight);
 }
@@ -347,8 +390,29 @@ img {
 }
 /********* Servicios *********/
 
-.servicios_imeg {
-  background-image: url(../assets/inicio/servicios.jpeg);
+.servicios_img1 {
+  background-image: url(../assets/servicios/servicios1.jpeg);
+}
+.servicios_img2 {
+  background-image: url(../assets/servicios/servicios2.jpg);
+}
+.servicios_img3 {
+  background-image: url(../assets/servicios/servicios3.jpg);
+}
+.servicios_img4 {
+  background-image: url(../assets/servicios/servicios4.jpg);
+}
+.servicios_img5 {
+  background-image: url(../assets/servicios/servicios5.JPG);
+}
+.servicios_img6 {
+  background-image: url(../assets/servicios/servicios6.jpg);
+}
+.servicios_img7 {
+  background-image: url(../assets/servicios/servicios7.jpeg);
+}
+.servicios_img8 {
+  background-image: url(../assets/servicios/servicios8.jpg);
 }
 
 /********* Contacto**********/
@@ -378,7 +442,6 @@ img {
 }
 
 /********* Unete *********/
-
 @media (max-width: 768px) {
   .contact-form {
     width: 100%;
@@ -523,6 +586,9 @@ img {
 /**********************************/
 /**********************************/
 @media screen and (max-width: 768px) {
+  .line-nav {
+    display: none;
+  }
   .menu1 {
     position: fixed;
     top: 0;
@@ -551,6 +617,7 @@ img {
     margin-top: 100px;
   }
   .navbar-menu li a {
+    font-size: var(--h2-font);
     color: var(--text-dark-color);
   }
   .menu2 {
@@ -561,8 +628,14 @@ img {
 
   .home_container {
     margin: 0 25px;
-    width: 80%;
-    height: 95%;
+    width: 90%;
+    height: 40%;
+  }
+  .home_container h1 {
+    font-size: 2rem;
+  }
+  .home_container h2 {
+    font-size: var(--h4-font);
   }
   .content_text {
     width: 100%;
@@ -571,8 +644,10 @@ img {
   .background-image {
     width: 100%;
   }
+
   .content-image {
     width: 100%;
+    height: 500px;
   }
 
   .content_doble {

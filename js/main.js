@@ -21,7 +21,7 @@ hamburgerMenu(".panel-btn", ".menu1", ".navbar-menu li");
 
 // Responsive Slider
 
-function slider(contenedor) {
+function slider(contenedor, btnNext, btnPrev) {
   const diapositivas = document.querySelectorAll(contenedor);
   let contador = 0;
 
@@ -37,9 +37,35 @@ function slider(contenedor) {
     }
   };
 
+  const prev = function prev() {
+    if (contador === 0) {
+      diapositivas[contador].classList.remove("active");
+      contador = diapositivas.length - 1;
+      diapositivas[contador].classList.add("active");
+    } else {
+      diapositivas[contador].classList.remove("active");
+      contador--;
+      diapositivas[contador].classList.add("active");
+    }
+  };
+  document.addEventListener("click", (e) => {
+    if (e.target.matches(btnNext)) {
+      e.preventDefault();
+      next();
+      clearInterval(autoplay);
+    }
+    if (e.target.matches(btnPrev)) {
+      e.preventDefault();
+      prev();
+      clearInterval(autoplay);
+    }
+  });
+
   const autoplay = setInterval(() => {
     next();
   }, 4000);
 }
 
-slider(".slider-slide");
+slider(".slider-slide1", ".next1", ".prev1");
+slider(".slider-slide2", ".next2", ".prev2");
+slider(".slider-slide3", ".next3", ".prev3");
