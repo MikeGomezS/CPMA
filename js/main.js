@@ -21,31 +21,40 @@ hamburgerMenu(".panel-btn", ".menu1", ".navbar-menu li");
 
 // Responsive Slider
 
-function slider(contenedor, btnNext, btnPrev) {
+function slider(contenedor, btnNext, btnPrev, circle) {
   const diapositivas = document.querySelectorAll(contenedor);
+  const circles = document.querySelectorAll(circle);
   let contador = 0;
 
   const next = function next() {
     if (contador === diapositivas.length - 1) {
       diapositivas[contador].classList.remove("active");
+      circles[contador].classList.remove("active_circle");
       contador = 0;
       diapositivas[contador].classList.add("active");
+      circles[contador].classList.add("active_circle");
     } else {
       diapositivas[contador].classList.remove("active");
+      circles[contador].classList.remove("active_circle");
       contador++;
       diapositivas[contador].classList.add("active");
+      circles[contador].classList.add("active_circle");
     }
   };
 
   const prev = function prev() {
     if (contador === 0) {
       diapositivas[contador].classList.remove("active");
+      circles[contador].classList.remove("active_circle");
       contador = diapositivas.length - 1;
       diapositivas[contador].classList.add("active");
+      circles[contador].classList.add("active_circle");
     } else {
       diapositivas[contador].classList.remove("active");
+      circles[contador].classList.remove("active_circle");
       contador--;
       diapositivas[contador].classList.add("active");
+      circles[contador].classList.add("active_circle");
     }
   };
   document.addEventListener("click", (e) => {
@@ -66,6 +75,6 @@ function slider(contenedor, btnNext, btnPrev) {
   }, 4000);
 }
 
-slider(".slider-slide1", ".next1", ".prev1");
-slider(".slider-slide2", ".next2", ".prev2");
-slider(".slider-slide3", ".next3", ".prev3");
+slider(".slider-slide1", ".next1", ".prev1", ".circle");
+slider(".slider-slide2", ".next2", ".prev2", ".circle2");
+slider(".slider-slide3", ".next3", ".prev3", ".circle2");
