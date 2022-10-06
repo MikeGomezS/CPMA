@@ -599,6 +599,22 @@ img {
   cursor: pointer;
 }
 
+/*********** Unete***************/
+.privacidad {
+  width: 80%;
+}
+.priv_img {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/inicio/priv.png);
+}
+
+/**********************************/
+/**********************************/
+/**********************************/
+/**********************************/
+/**********************************/
+/**********************************/
 /**********************************/
 /**********************************/
 /**********************************/
@@ -670,12 +686,15 @@ img {
   .content_doble {
     flex-direction: column-reverse;
   }
-
-  .TrabaNos {
-    height: auto;
+  .content_unete {
+    display: flex;
+    flex-direction: column;
   }
-  .content_TrabaNos {
-    flex-direction: column-reverse;
+  .content_unete .content_text {
+    width: 90%;
+  }
+  .content_unete .background-image {
+    width: 100%;
   }
 
   .content_footer {
