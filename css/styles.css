@@ -104,6 +104,7 @@ img {
 }
 .sub_title {
   font-size: var(--h3-font);
+  text-align: justify;
 }
 .text {
   margin: 15px;
@@ -528,6 +529,27 @@ img {
   transition: all 1s ease;
 }
 
+.contact-form-error {
+  margin-top: -1rem;
+  font-size: 100%;
+  /* background-color: var(--form-error-color); */
+  color: var(--text-gray1-color);
+  transition: all 800ms ease;
+}
+
+.contact-form-error.is-active {
+  display: block;
+  animation: show-message 1s 1 normal 0s ease-out both;
+}
+
+.none {
+  display: none;
+}
+.contact-form-loader img {
+  width: 50px;
+  margin: auto;
+}
+
 .content_info {
   display: flex;
   flex-direction: column;
@@ -599,7 +621,7 @@ img {
   cursor: pointer;
 }
 
-/*********** Unete***************/
+/*********** Pag de Privacidad***************/
 .privacidad {
   width: 80%;
 }

@@ -65,7 +65,7 @@
       <section class="container unete">
         <div class="content content_unete content_doble">
           <div class="content_text">
-            <p class="text">
+            <p class="sub_title">
               Unete a nuestro equipo de trabajo y desarrolla tu carrera en CPMA
               para hacer un mejor mundo para vivir.
             </p>
@@ -92,14 +92,14 @@
                   type="name"
                   name="telefono"
                   placeholder="Ingresa tu teléfono"
-                  title="El asunto es requerido"
+                  title="El telefono es requerido"
                   required
                 />
                 <input
                   type="text"
                   name="puesto"
                   placeholder="Puesto de interes"
-                  title="El asunto es requerido"
+                  title="El puesto de interes es requerido"
                   required
                 />
                 <textarea
@@ -112,6 +112,16 @@
                   required
                 ></textarea>
                 <input type="submit" value="Enviar" />
+                <div class="contact-form-loader none">
+                  <img
+                    loading="lazy"
+                    src="./assets/iconos/loader.svg"
+                    alt="Cargando"
+                  />
+                </div>
+                <div class="contact-form-response none">
+                  <p>Los datos han sido enviados</p>
+                </div>
               </form>
             </div>
           </div>
