@@ -394,16 +394,16 @@ img {
 }
 
 .nosotros_img1 {
-  background-image: url(../assets/nosotros/nosotros1.jpeg);
+  background-image: url(../assets/nosotros/nosotros1.jpg);
 }
 .nosotros_img2 {
-  background-image: url(../assets/nosotros/nosotros2.JPG);
+  background-image: url(../assets/nosotros/nosotros2.jpg);
 }
 .nosotros_img3 {
-  background-image: url(../assets/nosotros/nosotros3.jpeg);
+  background-image: url(../assets/nosotros/nosotros3.jpg);
 }
 .nosotros_img4 {
-  background-image: url(../assets/nosotros/nosotros4.JPG);
+  background-image: url(../assets/nosotros/nosotros4.jpg);
 }
 .nosotros_img5 {
   background-image: url(../assets/nosotros/nosotros5.jpg);
@@ -429,7 +429,7 @@ img {
 /********* Servicios *********/
 
 .servicios_img1 {
-  background-image: url(../assets/servicios/servicios1.jpeg);
+  background-image: url(../assets/servicios/servicios1.jpg);
 }
 .servicios_img2 {
   background-image: url(../assets/servicios/servicios2.jpg);
@@ -441,13 +441,13 @@ img {
   background-image: url(../assets/servicios/servicios4.jpg);
 }
 .servicios_img5 {
-  background-image: url(../assets/servicios/servicios5.JPG);
+  background-image: url(../assets/servicios/servicios5.jpg);
 }
 .servicios_img6 {
   background-image: url(../assets/servicios/servicios6.jpg);
 }
 .servicios_img7 {
-  background-image: url(../assets/servicios/servicios7.jpeg);
+  background-image: url(../assets/servicios/servicios7.jpg);
 }
 .servicios_img8 {
   background-image: url(../assets/servicios/servicios8.jpg);
