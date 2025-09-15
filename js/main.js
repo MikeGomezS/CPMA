@@ -118,7 +118,7 @@ function contactFormValidations() {
 
     $loader.classList.remove("none");
 
-    fetch("https://formsubmit.co/ajax/administracion@cpma.mx", {
+    fetch("https://formsubmit.co/ajax/cpmacomercial@cpma.mx", {
       method: "POST",
       body: new FormData(e.target),
     })
