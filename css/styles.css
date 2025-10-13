@@ -233,7 +233,7 @@ img {
 .navbar-menu li a {
   font-size: var(--p-font);
   font-weight: var(--font-bold-weight);
-  color: var(--background-color1);
+  color: var(--text-dark-color);
   text-align: center;
 }
 .navbar-menu .idioma {
@@ -466,41 +466,6 @@ img {
   height: 100vh;
   background-image: url(../assets/inicio/contact-inicio1.webp);
 }
-.home_contact2 {
-  width: 100%;
-  height: 100vh;
-  background-image: url(../assets/inicio/contact-inicio2.webp);
-}
-.home_contact3 {
-  width: 100%;
-  height: 100vh;
-  background-image: url(../assets/inicio/contact-inicio3.webp);
-}
-.home_contact4 {
-  width: 100%;
-  height: 100vh;
-  background-image: url(../assets/inicio/contact-inicio4.webp);
-}
-.home_contact5 {
-  width: 100%;
-  height: 100vh;
-  background-image: url(../assets/inicio/contact-inicio5.webp);
-}
-.home_contact6 {
-  width: 100%;
-  height: 100vh;
-  background-image: url(../assets/inicio/contact-inicio6.webp);
-}
-.home_contact7 {
-  width: 100%;
-  height: 100vh;
-  background-image: url(../assets/inicio/contact-inicio7.webp);
-}
-.home_contact8 {
-  width: 100%;
-  height: 100vh;
-  background-image: url(../assets/inicio/contact-inicio8.webp);
-}
 
 .active {
   opacity: 1;
@@ -526,7 +491,6 @@ img {
   font-weight: var(--font-bolder-weight);
   line-height: 1;
   color: var(--text-light-color);
-  text-align: justify;
 }
 .home_container h2 {
   font-size: var(--h3-font);
@@ -588,6 +552,9 @@ img {
 }
 
 /********* Nosotros *********/
+.edificacion {
+  height: 70vh;
+}
 .content-image {
   width: 50%;
   /* height: 500px; */
